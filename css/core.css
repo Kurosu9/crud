@@ -1,31 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    font: 14px 'Teko', sans-serif;
-    font-weight: normal;
+html,
+body {
+  font: 14px "Teko", sans-serif;
+  font-weight: normal;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wrapper {
-    position: relative;
-    background-color: #1E252B;
+  position: relative;
+  background-color: #1e252b;
 }
 
 .container {
-    width: 1224px;
-    margin: 0 auto;
+  width: 1224px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1264px) {
-    .container {
-        width: 100%;
-        padding: 0px 20px; 
-    }
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
 }
