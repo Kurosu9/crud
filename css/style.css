@@ -6,38 +6,98 @@
   font-size: x-large;
 }
 
-.menu_inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.menu__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    font-family: 'Teko', sans-serif;
 }
 
 /**********************************/
+
 .home {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #e8d0f4;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    background-color: #e8d0f4;
+}
+
+.search-bar {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 549px;
+    height: 64px;
+    background: #283036;
+    border: 2px solid #32393E;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 549px;
+    height: 64px;
+    padding: 22px 24px;
+    color: #7A7F82;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.search-bar button {
+    display: block;
+    margin-right: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    height: 48px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 8px;
+    background: #FF6E30;
+    transition: .2s;
+}
+
+.search-bar button:hover {
+    background: #919497;
+}
+
+::placeholder {
+    color: #7A7F82;
 }
 
 input[type="file"]::file-selector-button {
-  border: 2px solid #985ebc;
-  padding: 0.6em 0.8em;
-  border-radius: 0.4em;
-  background-color: #bfa0d3;
-  transition: 1s;
-  text-align: center;
-  font-size: 18px;
+    border: 2px solid #985ebc;
+    padding: 0.6em 0.8em;
+    border-radius: 0.4em;
+    background-color: #bfa0d3;
+    transition: 1s;
+    text-align: center;
+    font-size: 18px;
 }
 
 input[type="file"]::-ms-browse:hover {
@@ -56,17 +116,17 @@ input[type="file"]::file-selector-button:hover {
 }
 
 form {
-  text-align: center;
-  font-size: 60px;
-  background-color: transparent;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  font-family: "Teko", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    background-color: transparent;
+    margin: 50px 0px;
+    font-family: 'Teko', sans-serif ;
 }
 
 label {
   margin-inline-end: 30px;
 }
+
 /**********************************/
 
 .footer {
@@ -76,7 +136,7 @@ label {
   background-color: rgb(119, 87, 132);
 }
 
-.footer_inner p {
+.footer__inner p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: x-large;
@@ -84,7 +144,7 @@ label {
   color: rgb(226, 192, 242);
 }
 
-.footer_inner img {
+.footer__inner img {
   width: 30px;
   height: 30px;
   margin: 0px 10px;
@@ -214,4 +274,71 @@ label {
     opacity: 0;
     border-radius: 50%;
   }
+
+/*******************************/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__dialog {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.fade {
+    animation: fade 1.7s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
