@@ -9,9 +9,13 @@ font: 14px 'Poppins', sans-serif;
 font-weight: normal;
 } */
 
+body {
+    background-color: #e8d0f4;
+}
+
 .wrapper {
     position: relative;
-    background-color: #1E252B;
+    background-color: #e8d0f4;
 }
 
 .container {

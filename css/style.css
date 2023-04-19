@@ -2,13 +2,13 @@
     text-align: center;
     bottom: 0;
     padding: 20px 0px;
-    background-color: blue;
+    background-color: rgb(119, 87, 132);
 }
 
 .footer_inner p {
     font-size: large;
     font-weight: bolder;
-    color: red;
+    color: rgb(226, 192, 242);
 }
 
 .footer_inner img {
@@ -20,3 +20,46 @@
 a {
     text-decoration: none;
 }
+
+input[type="file"]::file-selector-button {
+    border: 2px solid #985ebc;
+    padding: 0.6em 0.8em;
+    border-radius: 0.4em;
+    background-color: #bfa0d3;
+    transition: 1s;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  input[type="file"]::-ms-browse:hover {
+    background-color: #dda0df;
+    border: 2px solid #bf6cc2;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #dda0df;
+    border: 2px solid #bf6cc2;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #dda0df;
+    border: 2px solid #bf6cc2;
+  }
+
+  form {
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: Marker Felt;
+  }
+
+  label {
+    margin-inline-end: 30px;
+  }
+
+  .contacts {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
