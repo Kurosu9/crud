@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-/* html, body {
-font: 14px 'Poppins', sans-serif;
-font-weight: normal;
-} */
+html, body {
+    font: 14px 'Teko', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
 
 .wrapper {
     position: relative;
