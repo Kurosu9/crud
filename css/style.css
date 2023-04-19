@@ -1,5 +1,5 @@
 .menu {
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   background-color: rgb(119, 87, 132);
@@ -23,10 +23,15 @@
 
 .btn {
     width: 100px;
-    height: 30px;
-    font-size: 25px;
+    height: 45px;
+    font-size: 26px;
     border: none;
     font-family: 'Teko', sans-serif;
+    background-color: #d8b4e8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 3em;
 }
 
 /**********************************/
@@ -35,7 +40,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 75vh;
+    min-height: 100vh;
     background-color: #e8d0f4;
 }
 
@@ -44,11 +49,11 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    width: 549px;
-    height: 64px;
-    background: #283036;
-    border: 2px solid #32393E;
-    border-radius: 15px;
+    width: 615px;
+    height: 85px;
+    background: #6e5c80;
+    border: 2px solid #524460;
+    border-radius: 45px;
 }
 
 .search-bar input {
@@ -59,7 +64,7 @@
     width: 549px;
     height: 64px;
     padding: 22px 24px;
-    color: #7A7F82;
+    color: #decae9;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -71,33 +76,34 @@
     border: none;
     outline: none;
     cursor: pointer;
-    width: 130px;
+    width: 140px;
     height: 48px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    border-radius: 8px;
-    background: #FF6E30;
+    border-radius: 25px;
+    background: #bc92bb;
     transition: .2s;
 }
 
 .search-bar button:hover {
-    background: #919497;
+    background: #bd7cbb;
 }
 
 ::placeholder {
-    color: #7A7F82;
+    color: #f3defb;
+    font-size: 17px;
 }
 
 input[type="file"]::file-selector-button {
-    border: 2px solid #985ebc;
-    padding: 0.6em 0.8em;
-    border-radius: 0.4em;
+    border: 2px solid #77578b;
+    padding: 0.8em 1.2em;
+    border-radius: 1em;
     background-color: #bfa0d3;
     transition: 1s;
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 input[type="file"]::-ms-browse:hover {
@@ -164,7 +170,7 @@ label {
 .area {
   background: #e8d0f4;
   width: 100%;
-  height: 111vh;
+  height: 109vh;
 }
 
 .circles {
@@ -174,6 +180,7 @@ label {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .circles li {
@@ -183,8 +190,8 @@ label {
   width: 20px;
   height: 20px;
   background: rgb(186, 153, 193);
-  animation: animate 25s linear infinite;
-  bottom: -150px;
+  animation: animate 15s linear infinite;
+  bottom: -1px;
 }
 
 .circles li:nth-child(1) {
@@ -274,7 +281,7 @@ label {
     opacity: 0;
     border-radius: 50%;
   }
-
+}
 /*******************************/
 
 .modal {
@@ -298,8 +305,8 @@ label {
     position: relative;
     width: 100%;
     padding: 40px;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(247, 225, 254);
+    border: 1px solid rgb(117, 93, 132);
     border-radius: 4px;
     max-height: 80vh;
     overflow-y: auto;
