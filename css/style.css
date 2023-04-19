@@ -22,12 +22,64 @@
 }
 
 /**********************************/
+
 .home {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: 75vh;
     background-color: #e8d0f4;
+}
+
+.search-bar {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 549px;
+    height: 64px;
+    background: #283036;
+    border: 2px solid #32393E;
+    border-radius: 15px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 549px;
+    height: 64px;
+    padding: 22px 24px;
+    color: #7A7F82;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.search-bar button {
+    display: block;
+    margin-right: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    height: 48px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 8px;
+    background: #FF6E30;
+    transition: .2s;
+}
+
+.search-bar button:hover {
+    background: #919497;
+}
+
+::placeholder {
+    color: #7A7F82;
 }
 
 input[type="file"]::file-selector-button {
@@ -38,8 +90,8 @@ input[type="file"]::file-selector-button {
     transition: 1s;
     text-align: center;
     font-size: 18px;
-  }
-  
+}
+
 input[type="file"]::-ms-browse:hover {
     background-color: #dda0df;
     border: 2px solid #bf6cc2;
@@ -59,14 +111,14 @@ form {
     text-align: center;
     font-size: 60px;
     background-color: transparent;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px 0px;
     font-family: 'Teko', sans-serif ;
 }
 
 label {
     margin-inline-end: 30px;
 }
+
 /**********************************/
 
 .footer {
