@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    bottom: 0;
+    padding: 20px 0px;
+    background-color: blue;
+}
+
+.footer_inner p {
+    font-size: large;
+    font-weight: bolder;
+    color: red;
+}
+
+.footer_inner img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+}
