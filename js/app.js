@@ -27,11 +27,3 @@ modal.addEventListener("click", (event) => {
 const page = document.documentElement;
 
 
-const scrollOpen = () => {
-    if (page.scrollTop + page.clientHeight >= page.scrollHeight) {
-        openModal();
-        window.removeEventListener("scroll", scrollOpen);
-    }
-}
-
-window.addEventListener("scroll", scrollOpen);
